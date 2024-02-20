@@ -154,5 +154,88 @@ header {
     background: #98a7fc;
     overflow: hidden;
     margin-bottom: 2rem;
-    
+
+}
+
+.home-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+} 
+
+.home-text h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--main-color);
+
+}
+
+.home-text h3::before{
+    content: '';
+    top: 50%;
+    transform: translate(-50%);
+    left: -15px;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+}
+
+.home-text h3::after{
+    content: '';
+    top: 50%;
+    transform: translate(50%);
+    right: -35px;
+    width: 20px;
+    height: 2px;
+    background: var(--main-color);
+}
+
+.home-text h2 {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+}
+
+.home-text p {
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.home-text .color {
+    color: var(--main-color);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+
+.social .bx {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background: var(--container-color);
+}
+
+.social .bx:hover{
+    background: var(--main-color);
+    transition: 0.3s all linear;
+
 }
