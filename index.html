@@ -4,129 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Matos - Analista de Sistemas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--Box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Juan Matos</title>
 </head>
 
 <body>
+    <!--HEADER-->
+    <header class="header">
+        <a href="#" class="logo">Juan Matos</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-    <!--Header-->
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contato">Contato</a>
 
-    <header>
-        <!--Nav-->
-        <div class="nav container">
-            <!--Logo-->
-            <a href="#" class="logo">Juan Matos</a>
-            <!--Navbar-->
-            <ul class="navbar">
-                <li>
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                </li>
-                <li>
-                    <a href="#servicos" class="nav-link">Serviços</a>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link">Contato</a>
-                </li>
-                </li>
-            </ul>
-            <!--Menu icon-->
-            <div class="menu-icon">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
+        </nav>
     </header>
 
+    <!--HOME SECTION-->
     <section class="home" id="home">
         <div class="home-content">
-            <div class="home-img">
-                <img src="img/perfil.png" alt="foto de perfil">
+            <h3>Olá!</h3>
+            <h1>Eu sou Juan Matos</h1>
+            <h3>Sou <span>Full-Stack Developer</span></h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, odit quibusdam. Consequatur excepturi
+                illum eveniet assumenda maxime. Voluptatibus perferendis qui veritatis vel libero, reprehenderit,
+                quibusdam tenetur dignissimos ex odio autem!
+            </p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="home-text">
-                <h3>Olá!</h3>
-                <h2>Eu sou <span class="color">Juan</span></h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing <span class="color">elit</span>. Ab consectetur,
-                    temporibus iusto officia
-                    animi voluptate similique cum autem neque repellendus vitae quasi, facere fugiat, ex impedit nostrum
-                    cumque? Repellat sequi vel, soluta ipsa, porro quisquam magnam dolore, dolorum omnis assumenda enim
-                    <br>labore exercitationem perspiciatis. Quisquam aperiam consequuntur recusandae vero nostrum?
+            <a href="" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/profiledp.png" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <!--ABOUT-->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/img/aboutpic.png" alt="Foto seção sobre">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <h3>Full-Stack Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident eaque dolorem, odit placeat
+                consequatur accusamus, quod natus aperiam aliquam repudiandae dolorum veniam, beatae ex sint ipsa eos
+                laborum libero sapiente error ratione. Quod ratione dolorum saepe repellendus obcaecati odit odio rerum
+                sed a reiciendis officia modi, consectetur ab. Ullam, non.
+            </p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desenvolvimento Web</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam error assumenda
+                    accusantium odit facilis ducimus veritatis obcaecati nemo, laborum placeat delectus ipsa nostrum
+                    laboriosam.
                 </p>
-                <!--Social-->
-                <div class="social">
-                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="btn">Leia mais...</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam error assumenda
+                    accusantium odit facilis ducimus veritatis obcaecati nemo, laborum placeat delectus ipsa nostrum
+                    laboriosam.
+                </p>
+                <a href="#" class="btn">Leia mais...</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>Desenvolvimento Mobile</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam error assumenda
+                    accusantium odit facilis ducimus veritatis obcaecati nemo, laborum placeat delectus ipsa nostrum
+                    laboriosam.
+                </p>
+                <a href="#" class="btn">Leia mais...</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--PORTFOLIO-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Últimos <span>Projetos</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/1.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
                 </div>
             </div>
-    </section>
-    <!--About-->
-    <section class="about container">
-        <!--Heading-->
-        <h2 class="heading">Sobre</h2>
-        <!--About content-->
-        <div class="about-content">
-            <div class="about-data">
-                <span>Sobre Mim</span>
-                <h2>Web Developer, <br>
-                    Mobile Developer <br>
-                    e Web Designer
-                </h2>
-                <a href="cv.docx" class="btn" download="">
-                    Download CV
-                    <i class='bx bx-download'></i>
-                </a>
+
+            <div class="portfolio-box">
+                <img src="img/2.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
-            <div class="about-text">
-                <p>Olá bla bla bla blab balbdal dahjsadsnsajl dsadhasdkas dgsyuagdysadb dgsadvjsah</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime qui perspiciatis voluptate molestias
-                    porro ratione.</p>
-                <p>Get your project book with contact button.</p>
+
+            <div class="portfolio-box">
+                <img src="img/3.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--Services-->
-    <section class="services container" id="services">
-        <!--Heading-->
-        <h2 class="heading">Serviços</h2>
-        <!--Services content-->
-        <div class="services-content">
-            <div class="services-box">
-                <i class='bx bx-code'></i>
-                <h2>Desenvolvimento Web</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quo modi, animi saepe eligendi
-                    mollitia.
-                </p>
+
+            <div class="portfolio-box">
+                <img src="img/4.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
-            <div class="services-box">
-                <i class='bx bx-lock'></i>
-                <h2>Segurança da Informação</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quo modi, animi saepe eligendi
-                    mollitia.
-                </p>
+
+            <div class="portfolio-box">
+                <img src="img/5.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
-            <div class="services-box">
-                <i class='bx bx-brush'></i>
-                <h2>Web Design teste</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quo modi, animi saepe eligendi
-                    mollitia.
-                </p>
+
+            <div class="portfolio-box">
+                <img src="img/6.jpg" alt="primeiro projeto">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--JavaScript-->
-    <script src="js/main.js"></script>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
