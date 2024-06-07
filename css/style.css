@@ -106,8 +106,11 @@ span {
 
 .home-img img {
     width: 25vw;
+<<<<<<< HEAD
     border-radius: 50%;/*Modifiquei aqui*/
     background-color: #59b2f4;/*E aqui*/
+=======
+>>>>>>> 54bf7b47300346d46e38f6d95b92bcfbaf2b4e80
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -178,7 +181,12 @@ span {
 }
 
 .about-img img {
+<<<<<<< HEAD
     width: 25vw;
+=======
+    width: 35vw;
+
+>>>>>>> 54bf7b47300346d46e38f6d95b92bcfbaf2b4e80
 }
 
 .heading {
