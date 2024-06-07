@@ -106,7 +106,7 @@ span {
 
 .home-img img {
     width: 25vw;
-    border-radius: 50%;/*Modifiquei aqui*/
+    border-radius: 49%;/*Modifiquei aqui*/
     background-color: #59b2f4;/*E aqui*/
     animation: floatImage 4s ease-in-out infinite;
 }
