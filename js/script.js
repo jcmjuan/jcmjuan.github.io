@@ -50,3 +50,46 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+//Suavizar os scroll entre as seções
+function scrollToSection(event) {
+    event.preventDefault();
+    
+    const targetId = event.currentTarget.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    
+    // Pega a posição do elemento alvo em relação ao topo da página
+    const targetPosition = targetSection.offsetTop;
+    // Posição atual do scroll
+    const startPosition = window.pageYOffset;
+    // Distância que precisamos percorrer
+    const distance = targetPosition - startPosition;
+    
+    // Duração em milissegundos (ajuste este valor para mais lento ou mais rápido)
+    const duration = 1000; // 1 segundo
+    let start = null;
+    
+    function animation(currentTime) {
+        if (start === null) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Função de easing para suavizar o movimento
+        const easeInOutQuad = t => t < 0.5 
+            ? 2 * t * t 
+            : -1 + (4 - 2 * t) * t;
+        
+        window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
+        
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+    
+    requestAnimationFrame(animation);
+}
+
+// Adiciona o evento a todos os links que começam com #
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', scrollToSection);
+});
