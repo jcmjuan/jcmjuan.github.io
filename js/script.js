@@ -94,15 +94,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', scrollToSection);
 });
 
-//Verificação do reCAPTCHA
-document.getElementById("contact").addEventListener("submit", function(e) {
-    var response = grecaptcha.getResponse();
 
-    if (response.length === 0) {
-      // reCAPTCHA não foi resolvido
-      e.preventDefault(); // impede o envio do formulário
-      document.getElementById("mensagemErro").style.display = "block";
-    } else {
-      document.getElementById("mensagemErro").style.display = "none";
-    }
-  });

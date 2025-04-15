@@ -218,6 +218,19 @@
         <!--MAIN JS-->
 
         <script src="js/script.js"></script>
+        <script>
+            document.getElementById("contact").addEventListener("submit", function(e) {
+              var response = grecaptcha.getResponse();
+        
+              if (response.length === 0) {
+                // reCAPTCHA não foi resolvido
+                e.preventDefault(); // impede o envio do formulário
+                document.getElementById("mensagemErro").style.display = "block";
+              } else {
+                document.getElementById("mensagemErro").style.display = "none";
+              }
+            });
+          </script>
 </body>
 
 </html>
