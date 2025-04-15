@@ -95,7 +95,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 //Verificação do reCAPTCHA
-document.getElementById("meuFormulario").addEventListener("submit", function(e) {
+document.getElementById("contact").addEventListener("submit", function(e) {
     var response = grecaptcha.getResponse();
 
     if (response.length === 0) {
