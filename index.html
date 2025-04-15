@@ -172,7 +172,7 @@
     <!--CONTATO-->
     <section class="contact" id="contact">
         <h2 class="heading">Entre em <span>Contato</span></h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="4cc92bfc-2420-4fc0-accb-0c25ab526130">
             <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
             <div class="input-box">
@@ -219,7 +219,7 @@
 
         <script src="js/script.js"></script>
         <script>
-            document.getElementById("contact").addEventListener("submit", function(e) {
+            document.getElementById("meuFormulario").addEventListener("submit", function(e) {
               var response = grecaptcha.getResponse();
         
               if (response.length === 0) {
